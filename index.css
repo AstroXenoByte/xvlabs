@@ -11,6 +11,11 @@
     --card-bg: #151921;
 }
 
+header{
+    colour: white;
+    background: #667eea;    
+}
+
 * {
     margin: 0;
     padding: 0;
