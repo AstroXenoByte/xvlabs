@@ -1,185 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>XVlabs — Modern Solutions for Real-World Problems</title>
-<meta name="description" content="XVlabs is a student-led software company in South Africa building web, mobile, AI and cloud solutions, and its own software products.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="XVlabs — Modern Solutions for Real-World Problems">
-<meta property="og:description" content="Student-led software engineering from South Africa. Custom software and in-house products.">
-<meta name="theme-color" content="#080B12">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XVlabs — Modern Solutions for Real-World Problems</title>
+  <meta name="description" content="XVlabs is a student-led software company in South Africa building web, mobile, AI and cloud solutions, and its own software products.">
+  <meta name="theme-color" content="#080B12">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="XVlabs — Modern Solutions for Real-World Problems">
+  <meta property="og:description" content="Student-led software engineering from South Africa. Custom software and in-house products.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512">
 </head>
+
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-<symbol id="phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
-<symbol id="cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></symbol>
-<symbol id="cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></symbol>
-<symbol id="layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7zM2 17l10 5 10-5M2 12l10 5 10-5"/></symbol>
-<symbol id="cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5zM6 12v5c3 2 9 2 12 0v-5"/></symbol>
-<symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
-<symbol id="code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
-<symbol id="mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
-<symbol id="in" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></symbol>
-<symbol id="ext" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
-<symbol id="dl" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
-<symbol id="quiz" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></symbol>
-<symbol id="tree" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="5" rx="1"/><rect x="2" y="17" width="6" height="5" rx="1"/><rect x="16" y="17" width="6" height="5" rx="1"/><path d="M12 7v5M5 17v-5h14v5"/></symbol>
-<symbol id="check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
-</defs></svg>
 
-<a class="skip" href="#main">Skip to content</a>
-<header class="nav">
-  <div class="wrap nav-in">
-    <a class="brand" href="#home" aria-label="XVlabs home"><img src="xvlabslogo.jpeg" alt="XVlabs logo" width="40" height="40"><span>XVlabs</span></a>
-    <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
-    <nav id="menu" class="menu" aria-label="Primary">
-      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#products">Products</a><a href="#investors">Investors</a>
-      <a class="btn btn-sm" href="#contact">Let's Talk</a>
-    </nav>
-  </div>
-</header>
+  <!-- SVG icon sprite (referenced with <use href="#id">) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+      <symbol id="cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></symbol>
+      <symbol id="cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></symbol>
+      <symbol id="layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7zM2 17l10 5 10-5M2 12l10 5 10-5"/></symbol>
+      <symbol id="cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5zM6 12v5c3 2 9 2 12 0v-5"/></symbol>
+      <symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+      <symbol id="mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+      <symbol id="in" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></symbol>
+      <symbol id="ext" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+      <symbol id="dl" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+      <symbol id="quiz" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></symbol>
+      <symbol id="tree" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="5" rx="1"/><rect x="2" y="17" width="6" height="5" rx="1"/><rect x="16" y="17" width="6" height="5" rx="1"/><path d="M12 7v5M5 17v-5h14v5"/></symbol>
+      <symbol id="check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    </defs>
+  </svg>
 
-<main id="main">
-<section id="home" class="hero">
-  <div class="wrap hero-in">
-    <div class="hero-copy">
-      <p class="tag">Student-led software company, South Africa</p>
-      <h1>Software engineered for problems that are still unsolved.</h1>
-      <p class="lead">XVlabs builds modern, scalable software for businesses and communities, and ships its own products along the way. We are a young team, and we bring curiosity and rigour to every build.</p>
-      <div class="actions"><a class="btn" href="#contact">Start a Conversation</a><a class="btn btn-ghost" href="#products">Explore Products</a></div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ Header / Navigation ============ -->
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="#home" aria-label="XVlabs home">
+        <img src="xvlabslogo.jpeg" alt="XVlabs logo" width="40" height="40">
+        <span>XVlabs</span>
+      </a>
+
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="menu" class="menu" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#investors">Investors</a>
+        <a class="btn btn-sm" href="#contact">Let's Talk</a>
+      </nav>
     </div>
-    <figure class="hero-vis">
-      <svg viewBox="0 0 460 420" role="img" aria-labelledby="vt">
-        <title id="vt">Diagram: the XVlabs core connected to web and mobile, AI and machine learning, cloud, and enterprise software</title>
-        <defs><pattern id="g" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0v28" fill="none" stroke="rgba(148,163,184,.08)"/></pattern>
-        <radialGradient id="r"><stop offset="0" stop-color="#3B82F6" stop-opacity=".28"/><stop offset="1" stop-color="#3B82F6" stop-opacity="0"/></radialGradient></defs>
-        <rect width="460" height="420" rx="20" fill="#0D1320" stroke="rgba(148,163,184,.16)"/>
-        <rect width="460" height="420" rx="20" fill="url(#g)"/>
-        <circle cx="230" cy="210" r="150" fill="url(#r)"/>
-        <g stroke="rgba(96,165,250,.55)" stroke-width="1.2" fill="none"><path d="M230 210V88M230 210H92M230 210H368M230 210V332"/></g>
-        <g class="nd"><rect x="150" y="52" width="160" height="40" rx="8"/><text x="230" y="77">Web &amp; Mobile</text>
-        <rect x="14" y="190" width="156" height="40" rx="8" transform="translate(-4 0)"/><text x="88" y="215">AI &amp; ML</text>
-        <rect x="290" y="190" width="156" height="40" rx="8" transform="translate(4 0)"/><text x="372" y="215">Cloud</text>
-        <rect x="150" y="328" width="160" height="40" rx="8"/><text x="230" y="353">Enterprise</text></g>
-        <rect x="190" y="170" width="80" height="80" rx="16" fill="#111827" stroke="#60A5FA"/>
-        <text x="230" y="219" text-anchor="middle" font-size="26" font-weight="800" fill="#F8FAFC">XV</text>
-      </svg>
-    </figure>
-  </div>
-</section>
+  </header>
 
-<section id="about" class="sec alt">
-  <div class="wrap">
-    <div class="head"><h2>A young team with a serious engineering standard</h2>
-    <p>XVlabs was founded to close the gap between emerging technology and real-world use. We are committed to excellence, creativity and sustainability in everything we build, and we treat being student-led as an advantage: we move quickly, question assumptions and enjoy hard problems.</p></div>
-    <div class="grid3">
-      <article class="card"><svg class="i"><use href="#cap"/></svg><h3>Student-Led Innovation</h3><p>Fresh perspectives and technical ambition, applied with discipline to real client and product work.</p></article>
-      <article class="card"><svg class="i"><use href="#pin"/></svg><h3>Based in South Africa</h3><p>Built locally, with an eye on the practical problems businesses and communities here and elsewhere face.</p></article>
-      <article class="card"><svg class="i"><use href="#code"/></svg><h3>Cutting-Edge Software</h3><p>Modern tools and emerging technology, chosen to be useful and maintainable rather than fashionable.</p></article>
-    </div>
-  </div>
-</section>
+  <main id="main">
 
-<section id="services" class="sec">
-  <div class="wrap">
-    <div class="head"><p class="tag">Our Services</p><h2>What We Offer</h2>
-    <p>Bespoke software tailored to the needs of businesses and communities.</p></div>
-    <div class="grid2">
-      <article class="card svc"><svg class="i"><use href="#phone"/></svg><div><h3>Web &amp; Mobile Applications</h3><p>Custom web and mobile applications designed for scalability, security and user experience, so they keep delivering value over time.</p></div></article>
-      <article class="card svc"><svg class="i"><use href="#cpu"/></svg><div><h3>AI &amp; Machine Learning</h3><p>AI and machine learning integrations that bring intelligent automation and data-driven insight into your business processes.</p></div></article>
-      <article class="card svc"><svg class="i"><use href="#cloud"/></svg><div><h3>Cloud Solutions</h3><p>Cloud-based platforms and data analytics tools that provide scalable infrastructure and actionable business intelligence.</p></div></article>
-      <article class="card svc"><svg class="i"><use href="#layers"/></svg><div><h3>Enterprise Software</h3><p>Software for efficiency and automation that streamlines operations and reduces costs across your organisation.</p></div></article>
-    </div>
-  </div>
-</section>
+    <!-- ============ Hero ============ -->
+    <section id="home" class="hero">
+      <div class="wrap hero-in">
 
-<section id="products" class="sec alt">
-  <div class="wrap">
-    <div class="head"><p class="tag">Our Products</p><h2>Built by XVlabs</h2>
-    <p>A growing suite of software products crafted in-house, solving real problems with clean, purposeful design.</p></div>
-    <div class="grid3">
-      <article class="card prod">
-        <div class="ph"><svg class="i lg"><use href="#phone"/></svg><span class="badge live"><svg class="i xs"><use href="#check"/></svg>Live</span></div>
-        <h3>XSlideShow Mobile App</h3>
-        <p class="sub">Style your phone with the XSlideShow app: a slideshow, wallpaper and screensaver tool.</p>
-        <p>Personalise your wallpaper, lock screen and screensaver, with effects such as rainfall, transitions and themes.</p>
-        <ul class="feat"><li>Wallpaper and lock screen slideshow</li><li>Photo slideshow and video display in screensaver mode</li><li>Water level that shows battery level</li></ul>
-        <a class="btn btn-sm" href="https://github.com/XVLabs/XSlideShowMobileApp/blob/main/XSlideShow.apk" target="_blank" rel="noopener noreferrer"><svg class="i xs"><use href="#dl"/></svg>View Product</a>
-        <small>Opens the APK file on GitHub. Not an app store listing.</small>
-      </article>
-      <article class="card prod">
-        <div class="ph"><svg class="i lg"><use href="#quiz"/></svg><span class="badge beta">Beta</span></div>
-        <h3>X-ITC Study App</h3>
-        <p class="sub">A strong programmer has a strong understanding of the fundamentals.</p>
-        <p>X-ITC, short for X-Intro To Computing, helps students understand and test themselves on computing fundamentals. It is a quiz app with eight chapters.</p>
-        <ul class="feat"><li>Learn what makes a computer tick</li><li>Time your attempts</li><li>Track and review your progress</li></ul>
-        <a class="btn btn-sm btn-ghost" href="https://github.com/XVLabs/XITCStudy-App.git" target="_blank" rel="noopener noreferrer"><svg class="i xs"><use href="#ext"/></svg>Learn More</a>
-        <small>Opens the GitHub repository.</small>
-      </article>
-      <article class="card prod">
-        <div class="ph"><svg class="i lg"><use href="#tree"/></svg><span class="badge beta">Beta</span></div>
-        <h3>X-DSA Study App</h3>
-        <p class="sub">Everything follows an algorithm and is built on a structure. Solidify yours.</p>
-        <p>X-DSA, short for X-Data Structures and Algorithms, helps students understand and test themselves on data structures and algorithms. It is a quiz app with fifteen chapters.</p>
-        <ul class="feat"><li>Learn through continuous, self-paced testing</li><li>Time your attempts</li><li>Track and review your progress</li></ul>
-        <a class="btn btn-sm btn-ghost" href="https://github.com/XVLabs/X-DSA-Study-APP.git" target="_blank" rel="noopener noreferrer"><svg class="i xs"><use href="#ext"/></svg>Learn More</a>
-        <small>Opens the GitHub repository.</small>
-      </article>
-    </div>
-  </div>
-</section>
+        <div class="hero-copy">
+          <p class="tag">Student-led software company, South Africa</p>
+          <h1>Software engineered for problems that are still unsolved.</h1>
+          <p class="lead">
+            XVlabs builds modern, scalable software for businesses and communities, and ships its own products along the way.
+            We are a young team, and we bring curiosity and rigour to every build.
+          </p>
+          <div class="actions">
+            <a class="btn" href="#contact">Start a Conversation</a>
+            <a class="btn btn-ghost" href="#products">Explore Products</a>
+          </div>
+        </div>
 
-<section id="investors" class="sec">
-  <div class="wrap">
-    <div class="panel">
-      <div><p class="tag">Investment Opportunities</p><h2>Partner With Us</h2></div>
-      <div>
-        <p class="lead">XVlabs is a growing startup and is actively seeking strategic investors and partners to accelerate its expansion and bring more solutions to market.</p>
-        <p>Partnerships can support our growth and development in AI, software development and digital transformation. If that interests you, we would like to talk.</p>
-        <a class="btn" href="#contact">Discuss a Partnership</a>
+        <figure class="hero-vis">
+          <svg viewBox="0 0 460 420" role="img" aria-labelledby="vis-title">
+            <title id="vis-title">Diagram: the XVlabs core connected to web and mobile, AI and machine learning, cloud, and enterprise software</title>
+
+            <defs>
+              <pattern id="vis-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+                <path d="M28 0H0v28" fill="none" stroke="rgba(148,163,184,.08)"/>
+              </pattern>
+              <radialGradient id="vis-glow">
+                <stop offset="0" stop-color="#3B82F6" stop-opacity=".28"/>
+                <stop offset="1" stop-color="#3B82F6" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <!-- Background: panel, grid, glow -->
+            <rect width="460" height="420" rx="20" fill="#0D1320" stroke="rgba(148,163,184,.16)"/>
+            <rect width="460" height="420" rx="20" fill="url(#vis-grid)"/>
+            <circle cx="230" cy="210" r="150" fill="url(#vis-glow)"/>
+
+            <!-- Connectors: core edge to node edge (top, bottom, left, right) -->
+            <g stroke="rgba(96,165,250,.55)" stroke-width="1.2" fill="none">
+              <path d="M230 170V92"/>
+              <path d="M230 250V328"/>
+              <path d="M190 210H160"/>
+              <path d="M270 210H300"/>
+            </g>
+
+            <!-- Outer nodes: all 150x40, centred on the core's axes -->
+            <g class="nd" text-anchor="middle" dominant-baseline="central">
+              <rect x="155" y="52" width="150" height="40" rx="8"/>
+              <text x="230" y="72">Web &amp; Mobile</text>
+
+              <rect x="10" y="190" width="150" height="40" rx="8"/>
+              <text x="85" y="210">AI &amp; ML</text>
+
+              <rect x="300" y="190" width="150" height="40" rx="8"/>
+              <text x="375" y="210">Cloud</text>
+
+              <rect x="155" y="328" width="150" height="40" rx="8"/>
+              <text x="230" y="348">Enterprise</text>
+            </g>
+
+            <!-- Core -->
+            <rect x="190" y="170" width="80" height="80" rx="16" fill="#111827" stroke="#60A5FA"/>
+            <text x="230" y="210" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="800" fill="#F8FAFC">XV</text>
+          </svg>
+        </figure>
+
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="contact" class="sec alt">
-  <div class="wrap">
-    <div class="head"><h2>Contact Us</h2>
-    <p>We'd love to hear from you. Whether you're interested in our services, partnerships or investment opportunities, reach out today.</p></div>
-    <div class="grid2">
-      <a class="card contact" href="mailto:mokoenasenzokuhle@gmail.com"><svg class="i"><use href="#mail"/></svg><div><h3>Email our CEO</h3><p>mokoenasenzokuhle@gmail.com</p></div></a>
-      <a class="card contact" href="https://www.linkedin.com/company/xvlabs/" target="_blank" rel="noopener noreferrer"><svg class="i"><use href="#in"/></svg><div><h3>Follow XVlabs on LinkedIn</h3><p>linkedin.com/company/xvlabs</p></div></a>
-    </div>
-  </div>
-</section>
-</main>
+    <!-- ============ About ============ -->
+    <section id="about" class="sec alt">
+      <div class="wrap">
 
-<footer class="foot">
-  <div class="wrap foot-in">
-    <div><a class="brand" href="#home" aria-label="XVlabs home"><img src="xvlabslogo.jpeg" alt="XVlabs logo" width="40" height="40"><span>XVlabs</span></a>
-    <p>A student-led technology startup in South Africa, building modern software to solve real-world problems.</p></div>
-    <nav aria-label="Footer"><a href="#about">About</a><a href="#services">Services</a><a href="#products">Products</a><a href="#investors">Investors</a><a href="#contact">Contact</a><a href="https://www.linkedin.com/company/xvlabs/" target="_blank" rel="noopener noreferrer">LinkedIn</a></nav>
-  </div>
-  <div class="wrap copy">&copy; <span id="yr">2026</span> XVlabs. All rights reserved.</div>
-</footer>
-<script>
-(function () {
-  var btn = document.querySelector('.menu-btn'), menu = document.getElementById('menu');
-  function set(open) {
-    menu.classList.toggle('open', open);
-    btn.setAttribute('aria-expanded', open);
-    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-  }
-  btn.addEventListener('click', function () { set(!menu.classList.contains('open')); });
-  menu.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && menu.classList.contains('open')) { set(false); btn.focus(); } });
-  document.getElementById('yr').textContent = new Date().getFullYear();
-})();
-</script>
+        <div class="head">
+          <h2>A young team with a serious engineering standard</h2>
+          <p>
+            XVlabs was founded to close the gap between emerging technology and real-world use.
+            We are committed to excellence, creativity and sustainability in everything we build, and we treat being student-led as an advantage:
+            we move quickly, question assumptions and enjoy hard problems.
+          </p>
+        </div>
+
+        <div class="grid3">
+          <article class="card">
+            <svg class="i" aria-hidden="true"><use href="#cap"/></svg>
+            <h3>Student-Led Innovation</h3>
+            <p>Fresh perspectives and technical ambition, applied with discipline to real client and product work.</p>
+          </article>
+
+          <article class="card">
+            <svg class="i" aria-hidden="true"><use href="#pin"/></svg>
+            <h3>Based in South Africa</h3>
+            <p>Built locally, with an eye on the practical problems businesses and communities here and elsewhere face.</p>
+          </article>
+
+          <article class="card">
+            <svg class="i" aria-hidden="true"><use href="#code"/></svg>
+            <h3>Cutting-Edge Software</h3>
+            <p>Modern tools and emerging technology, chosen to be useful and maintainable rather than fashionable.</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ Services ============ -->
+    <section id="services" class="sec">
+      <div class="wrap">
+
+        <div class="head">
+          <p class="tag">Our Services</p>
+          <h2>What We Offer</h2>
+          <p>Bespoke software tailored to the needs of businesses and communities.</p>
+        </div>
+
+        <div class="grid2">
+          <article class="card svc">
+            <svg class="i" aria-hidden="true"><use href="#phone"/></svg>
+            <div>
+              <h3>Web &amp; Mobile Applications</h3>
+              <p>Custom web and mobile applications designed for scalability, security and user experience, so they keep delivering value over time.</p>
+            </div>
+          </article>
+
+          <article class="card svc">
+            <svg class="i" aria-hidden="true"><use href="#cpu"/></svg>
+            <div>
+              <h3>AI &amp; Machine Learning</h3>
+              <p>AI and machine learning integrations that bring intelligent automation and data-driven insight into your business processes.</p>
+            </div>
+          </article>
+
+          <article class="card svc">
+            <svg class="i" aria-hidden="true"><use href="#cloud"/></svg>
+            <div>
+              <h3>Cloud Solutions</h3>
+              <p>Cloud-based platforms and data analytics tools that provide scalable infrastructure and actionable business intelligence.</p>
+            </div>
+          </article>
+
+          <article class="card svc">
+            <svg class="i" aria-hidden="true"><use href="#layers"/></svg>
+            <div>
+              <h3>Enterprise Software</h3>
+              <p>Software for efficiency and automation that streamlines operations and reduces costs across your organisation.</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ Products ============ -->
+    <section id="products" class="sec alt">
+      <div class="wrap">
+
+        <div class="head">
+          <p class="tag">Our Products</p>
+          <h2>Built by XVlabs</h2>
+          <p>A growing suite of software products crafted in-house, solving real problems with clean, purposeful design.</p>
+        </div>
+
+        <div class="grid3">
+
+          <!-- XSlideShow -->
+          <article class="card prod">
+            <div class="ph">
+              <svg class="i lg" aria-hidden="true"><use href="#phone"/></svg>
+              <span class="badge live">
+                <svg class="i xs" aria-hidden="true"><use href="#check"/></svg>Live
+              </span>
+            </div>
+            <h3>XSlideShow Mobile App</h3>
+            <p class="sub">Style your phone with the XSlideShow app: a slideshow, wallpaper and screensaver tool.</p>
+            <p>Personalise your wallpaper, lock screen and screensaver, with effects such as rainfall, transitions and themes.</p>
+            <ul class="feat">
+              <li>Wallpaper and lock screen slideshow</li>
+              <li>Photo slideshow and video display in screensaver mode</li>
+              <li>Water level that shows battery level</li>
+            </ul>
+            <a class="btn btn-sm" href="https://github.com/XVLabs/XSlideShowMobileApp/blob/main/XSlideShow.apk" target="_blank" rel="noopener noreferrer">
+              <svg class="i xs" aria-hidden="true"><use href="#dl"/></svg>View Product
+            </a>
+            <small>Opens the APK file on GitHub. Not an app store listing.</small>
+          </article>
+
+          <!-- X-ITC -->
+          <article class="card prod">
+            <div class="ph">
+              <svg class="i lg" aria-hidden="true"><use href="#quiz"/></svg>
+              <span class="badge beta">Beta</span>
+            </div>
+            <h3>X-ITC Study App</h3>
+            <p class="sub">A strong programmer has a strong understanding of the fundamentals.</p>
+            <p>X-ITC, short for X-Intro To Computing, helps students understand and test themselves on computing fundamentals. It is a quiz app with eight chapters.</p>
+            <ul class="feat">
+              <li>Learn what makes a computer tick</li>
+              <li>Time your attempts</li>
+              <li>Track and review your progress</li>
+            </ul>
+            <a class="btn btn-sm btn-ghost" href="https://github.com/XVLabs/XITCStudy-App" target="_blank" rel="noopener noreferrer">
+              <svg class="i xs" aria-hidden="true"><use href="#ext"/></svg>Learn More
+            </a>
+            <small>Opens the GitHub repository.</small>
+          </article>
+
+          <!-- X-DSA -->
+          <article class="card prod">
+            <div class="ph">
+              <svg class="i lg" aria-hidden="true"><use href="#tree"/></svg>
+              <span class="badge beta">Beta</span>
+            </div>
+            <h3>X-DSA Study App</h3>
+            <p class="sub">Everything follows an algorithm and is built on a structure. Solidify yours.</p>
+            <p>X-DSA, short for X-Data Structures and Algorithms, helps students understand and test themselves on data structures and algorithms. It is a quiz app with fifteen chapters.</p>
+            <ul class="feat">
+              <li>Learn through continuous, self-paced testing</li>
+              <li>Time your attempts</li>
+              <li>Track and review your progress</li>
+            </ul>
+            <a class="btn btn-sm btn-ghost" href="https://github.com/XVLabs/X-DSA-Study-APP" target="_blank" rel="noopener noreferrer">
+              <svg class="i xs" aria-hidden="true"><use href="#ext"/></svg>Learn More
+            </a>
+            <small>Opens the GitHub repository.</small>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Investors ============ -->
+    <section id="investors" class="sec">
+      <div class="wrap">
+        <div class="panel">
+
+          <div>
+            <p class="tag">Investment Opportunities</p>
+            <h2>Partner With Us</h2>
+          </div>
+
+          <div>
+            <p class="lead">
+              XVlabs is a growing startup and is actively seeking strategic investors and partners to accelerate its expansion and bring more solutions to market.
+            </p>
+            <p>
+              Partnerships can support our growth and development in AI, software development and digital transformation.
+              If that interests you, we would like to talk.
+            </p>
+            <a class="btn" href="#contact">Discuss a Partnership</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section id="contact" class="sec alt">
+      <div class="wrap">
+
+        <div class="head">
+          <h2>Contact Us</h2>
+          <p>We'd love to hear from you. Whether you're interested in our services, partnerships or investment opportunities, reach out today.</p>
+        </div>
+
+        <div class="grid2">
+          <a class="card contact" href="mailto:mokoenasenzokuhle@gmail.com">
+            <svg class="i" aria-hidden="true"><use href="#mail"/></svg>
+            <div>
+              <h3>Email our CEO</h3>
+              <p>mokoenasenzokuhle@gmail.com</p>
+            </div>
+          </a>
+
+          <a class="card contact" href="https://www.linkedin.com/company/xvlabs/" target="_blank" rel="noopener noreferrer">
+            <svg class="i" aria-hidden="true"><use href="#in"/></svg>
+            <div>
+              <h3>Follow XVlabs on LinkedIn</h3>
+              <p>linkedin.com/company/xvlabs</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <div>
+        <a class="brand" href="#home" aria-label="XVlabs home">
+          <img src="xvlabslogo.jpeg" alt="XVlabs logo" width="40" height="40">
+          <span>XVlabs</span>
+        </a>
+        <p>A student-led technology startup in South Africa, building modern software to solve real-world problems.</p>
+      </div>
+
+      <nav aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#investors">Investors</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.linkedin.com/company/xvlabs/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </div>
+
+    <div class="wrap copy">&copy; <span id="yr">2026</span> XVlabs. All rights reserved.</div>
+  </footer>
+
+  <script>
+    (function () {
+      var btn  = document.querySelector('.menu-btn');
+      var menu = document.getElementById('menu');
+
+      function setMenu(open) {
+        menu.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open);
+        btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      }
+
+      // Toggle on button click
+      btn.addEventListener('click', function () {
+        setMenu(!menu.classList.contains('open'));
+      });
+
+      // Close after choosing a link
+      menu.addEventListener('click', function (e) {
+        if (e.target.closest('a')) setMenu(false);
+      });
+
+      // Close on Escape and return focus to the button
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && menu.classList.contains('open')) {
+          setMenu(false);
+          btn.focus();
+        }
+      });
+
+      // Keep the footer year current
+      document.getElementById('yr').textContent = new Date().getFullYear();
+    })();
+  </script>
+
 </body>
 </html>
